@@ -1,0 +1,311 @@
+/* Cuerpo de la página */
+body{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Encabezado fijo */
+header {
+    background-color: #4f6f52;
+    background-image: linear-gradient(to right,white, #4f6f52);
+    position: sticky;
+    top: 0;
+}
+
+.cajaEncabezado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logoEmpresa{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    left: 20px;
+    vertical-align: middle;
+}
+
+.iconoMenuDesplegable {
+    padding: 14px 30px;
+}
+
+.cajaMenu li {
+    text-decoration: none;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+.navMenu li a{
+    background-image: linear-gradient(to right,white, #4f6f52);
+    color: #E8DFCA;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navMenu li ul {
+    display: none;
+    position: absolute;
+}
+
+.navMenu li:hover > ul{
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: -40px;
+}
+
+.navMenu li {
+    cursor: pointer;
+}
+
+#listaMenu:hover{
+    color: #000000;
+}
+
+/* nav.navMenu {
+    color: #FFFFFF;
+    display: flex;
+    align-items:center;
+} */
+
+/* 
+    clip-path: circle(5% at top right);
+    transition: clip-path .4s;
+} */
+
+/* Página productos */
+.mainProductos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagenProductos{
+    display: none;
+}
+
+.categorias {
+    padding: 2em;
+    text-align: center;
+    vertical-align: middle;
+    border: #4f6f52 6px solid;
+    border-radius: 8px;
+    background-image: url("Imágenes/Ambiente\ -\ Oficina\ 01.jpeg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.categorias li{
+    display: inline-block;
+    width: 12em;
+    height: 12em;
+    vertical-align: middle;
+    margin: 15px;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 4em;
+    color: #1A4D2E;
+    align-content: center;
+    font-size: 14px;
+    background-color: white;
+}
+
+.categorias li:hover{
+    border-color: #1A4D2E;
+    color: #4f6f52;
+    transform: scale(1.1);
+    background-color: #FFFFFF;
+}
+
+.categorias h2 {
+    font-weight: bold;
+}
+
+.categorias a{
+    text-decoration: none;
+    color: #1A4D2E;
+}
+
+.presentacionProductos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1A4D2E;
+    padding: 0 0 20px 0;
+    margin: 0 0 15px 0;
+}
+
+.presentacionProductos h2{
+    background-color: #4f6f52;
+    color: #E8DFCA;
+    margin: 1em;
+    border-radius: 5em;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.presentacionProductos h3{
+    vertical-align: middle;
+    display: contents;
+}
+
+.presentacionProductos img {
+    width: 88px;
+}
+
+.presentacionProductos article{
+    font-size: 14px;
+    display: inline-block;
+    padding: 2em;
+    height: 7em;
+    width: 7em;
+    border-radius: 2em;
+    color: #1A4D2E;
+    margin: 1.5%;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+    align-content: center;
+}
+
+.presentacionProductos article:hover{
+    transform: scale(1.08);
+    color: #4f6f52;
+    box-shadow: 0px 0px 6px 3px
+}
+
+footer{
+    background-image: linear-gradient(to right,white, #4f6f52);
+}
+
+.logosContacto {
+    padding: 0.1em;
+    font-size: 30px;
+    width: 2em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.logosContacto:hover{
+    transform: scale(1.2);
+}
+
+.cajaPie {
+    text-align: center;
+    padding: 2% 0 0 0;
+}
+
+.suscripcion {
+    text-align: center;
+    bottom: 1em;
+}
+
+.input-padron{
+    padding: 0.3em;
+    border: none;
+    border-radius: 10px;
+    margin: 0 0.5em;
+}
+
+.botonEnviar{
+    text-transform: uppercase;
+    margin-left: 0.3em;
+    padding: 0.6em;
+    border: none;
+    border-radius: 14px;
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+
+.copyright {
+    font-size: 0.8em;
+    text-align: center;
+    bottom: 0.4em;
+    padding: 0.5em;
+}
+
+@media only screen and (max-width: 576px) {
+
+
+    .imagenProductos{
+        display: flex;
+        width: 3em;
+    }
+
+    
+  }
+
+@media only screen and (min-width: 768px) {
+    .cajaEncabezado {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px 0 0;
+        max-height: 81.81px;
+    }
+
+    .cajaMenu {
+        display: flex;
+    }
+
+    .linkMenu {
+        color: #1A4D2E;
+        padding: 1% 3%;
+    }
+    
+    nav.cajaMenu{
+        width: 500px;
+    }
+    
+    .cajaMenu a {
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+    
+    .listaMenu:hover{
+        color: #1A4D2E;
+        background-color: #FFFFFF;
+        border-radius: 2em;
+        transition: 0.3s;
+    }
+
+    #iconoMenuDesplegable{
+        display: none;
+    }
+
+    .categorias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4em;
+        border: #4f6f52 6px solid;
+        border-radius: 5em;
+        height: 340px;
+    }
+
+    .categorias li{
+        font-size: 16px;
+    }
+
+    .imagenProductos{
+        display: inline;
+        width: 3em;
+    }
+
+  }
