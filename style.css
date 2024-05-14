@@ -3,6 +3,7 @@ body{
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    min-width: 380px;
 }
 
 /* Encabezado fijo */
@@ -74,17 +75,6 @@ header {
     display: none;
 }
 
-/* nav.navMenu {
-    color: #FFFFFF;
-    display: flex;
-    align-items:center;
-} */
-
-/* 
-    clip-path: circle(5% at top right);
-    transition: clip-path .4s;
-} */
-
 /* Página productos */
 .mainProductos {
     display: flex;
@@ -98,29 +88,29 @@ header {
 }
 
 .categorias {
-    padding: 2em;
-    text-align: center;
-    vertical-align: middle;
-    border: #4f6f52 6px solid;
-    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-image: url("Imágenes/Ambiente\ -\ Oficina\ 01.jpeg");
     background-position: center center;
     background-size: cover;
+    border: #4f6f52 6px solid;
+    border-radius: 3em;
+    padding: 0;
 }
 
 .categorias li{
-    display: inline-block;
-    width: 12em;
-    height: 12em;
-    vertical-align: middle;
     margin: 15px;
     padding: 1em;
     box-sizing: border-box;
     border-radius: 4em;
     color: #1A4D2E;
-    align-content: center;
     font-size: 14px;
     background-color: white;
+    width: 12em;
+    list-style: none;
+    text-align: center;
 }
 
 .categorias li:hover{
@@ -248,7 +238,7 @@ footer{
 
     .cajaMenu {
         display: flex;
-        padding: 10px 5px 0 0;
+        padding: 10px 6px 0 0;
     }
         
     .cajaMenu ul {
@@ -260,7 +250,6 @@ footer{
 
     .cajaMenu ul li {
         text-decoration: none;
-        padding: 0 2px;
     }
 
     .cajaMenu li a{
@@ -286,13 +275,12 @@ footer{
         justify-content: center;
         align-items: center;
         padding: 4em;
-        border: #4f6f52 6px solid;
-        border-radius: 5em;
-        height: 340px;
+        height: 320px;
+        flex-wrap: wrap;
     }
 
     .categorias li{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .imagenProductos{
@@ -303,11 +291,46 @@ footer{
   }
 
   @media only screen and (min-width: 768px){
-    
+    .categorias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4em;
+        border: #4f6f52 6px solid;
+        border-radius: 5em;
+        height: 330px;
+        flex-wrap: wrap;
+    }
+
+    .categorias li {
+        height: 170px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .categorias a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .imagenProductos{
         display: flex;
         width: 3em;
     }
 
+    .presentacionProductos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacionProductos div {
+        width: 1310px;
+    }
     
   }
