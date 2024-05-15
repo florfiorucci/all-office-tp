@@ -79,7 +79,7 @@ header {
 .mainProductos {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -91,7 +91,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     background-image: url("Imágenes/Ambiente\ -\ Oficina\ 01.jpeg");
     background-position: center center;
     background-size: cover;
@@ -101,6 +100,9 @@ header {
 }
 
 .categorias li{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     margin: 15px;
     padding: 1em;
     box-sizing: border-box;
@@ -111,6 +113,7 @@ header {
     width: 12em;
     list-style: none;
     text-align: center;
+    vertical-align: middle;   
 }
 
 .categorias li:hover{
@@ -135,8 +138,16 @@ header {
     text-align: center;
     color: #FFFFFF;
     background-color: #1A4D2E;
-    padding: 0 0 20px 0;
     margin: 0 0 15px 0;
+}
+
+.presentacionProductos div {
+    padding: 24px;
+}
+
+.presentacionProductos h1 {
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
 .presentacionProductos h2{
@@ -144,7 +155,7 @@ header {
     color: #E8DFCA;
     margin: 1em;
     border-radius: 5em;
-    padding: 0.5em;
+    padding: 1em;
     font-size: 1.3em;
     text-transform: uppercase;
     text-align: center;
@@ -159,7 +170,11 @@ header {
     width: 88px;
 }
 
-.presentacionProductos article{
+.presentacionProductos ul {
+    padding: 0;
+}
+
+.presentacionProductos li {
     font-size: 14px;
     display: inline-block;
     padding: 2em;
@@ -173,7 +188,7 @@ header {
     align-content: center;
 }
 
-.presentacionProductos article:hover{
+.presentacionProductos li:hover{
     transform: scale(1.08);
     color: #4f6f52;
     box-shadow: 0px 0px 6px 3px
@@ -238,7 +253,8 @@ footer{
 
     .cajaMenu {
         display: flex;
-        padding: 10px 6px 0 0;
+        padding: 14px 5px 0 0;
+        font-size: 12px;
     }
         
     .cajaMenu ul {
@@ -274,8 +290,8 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 4em;
-        height: 320px;
+        padding: 3em 4em;
+        height: auto;
         flex-wrap: wrap;
     }
 
@@ -291,15 +307,14 @@ footer{
   }
 
   @media only screen and (min-width: 768px){
+    .navMenu li {
+        padding: 0 15px;
+    }
+
     .categorias {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 4em;
-        border: #4f6f52 6px solid;
+        padding: 3em;
         border-radius: 5em;
-        height: 330px;
-        flex-wrap: wrap;
+        height: 360px;
     }
 
     .categorias li {
@@ -320,17 +335,4 @@ footer{
         width: 3em;
     }
 
-    .presentacionProductos {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .presentacionProductos div {
-        width: 1310px;
-    }
-    
   }
