@@ -4,12 +4,13 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     min-width: 380px;
+    background-color:#E8DFCA;
 }
 
 /* Encabezado fijo */
 header {
     background-color: #4f6f52;
-    background-image: linear-gradient(to right,white, #4f6f52);
+    background-image: linear-gradient(to right, #E8DFCA, #4f6f52);
     position: sticky;
     top: 0;
 }
@@ -40,7 +41,7 @@ header {
 }
 
 .cajaMenuDesplegable li a{
-    background-image: linear-gradient(to right,white, #4f6f52);
+    background-image: linear-gradient(to right, #E8DFCA, #4f6f52);
     color: #E8DFCA;
     text-decoration: none;
     padding: 10px 15px;
@@ -63,6 +64,11 @@ header {
     left: -40px;
 }
 
+.cajaMenuDesplegable li ul li ul {
+    display: none;
+    position: absolute;
+}
+
 .cajaMenuDesplegable li {
     cursor: pointer;
 }
@@ -75,7 +81,55 @@ header {
     display: none;
 }
 
-/* Página productos */
+/* Página Inicio */
+.caracteristicasEmpresa {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+/*     
+    animation-direction: normal;
+    animation-iteration-count: infinite; */
+}
+
+.fraseEmpresa {
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.productosDestacados {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #4f6f52;
+    border-radius: 8px;
+    position: relative;
+    background-color: #1A4D2E;
+    padding: 0 1em 1.6em;
+    margin: 0.5em 0;
+}
+
+.productosDestacados p {
+    font-size: 20px;
+
+}
+
+.productosDestacados img {
+    display: inline-flex;
+    width: 6em;
+    height: 6em;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0.6em;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin: 0.2em;
+}
+
+/* Página Productos */
 .mainProductos {
     display: flex;
     flex-direction: column;
@@ -195,7 +249,7 @@ header {
 }
 
 footer{
-    background-image: linear-gradient(to right,white, #4f6f52);
+    background-image: linear-gradient(to right, #E8DFCA, #4f6f52);
 }
 
 .logosContacto {
