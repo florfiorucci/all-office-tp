@@ -45,6 +45,33 @@
             </section>
         </header>
 
+        <body>
+            <h1>Validación de formulario</h1>
+             <form name="formulario" action="" method="POST">
+                <label for="nombre">Nombre completo: </label>
+                <input type="text" name="nombre" maxlength="50" id="nombre">
+                <br><br>
+                <label for="edad">Edad:</label>
+                <input type="text" name="edad" size="3" maxlength="6" id="edad">
+                <br><br>
+                <label for="dni">DNI: </label>
+                <input type="text" name="dni" size="12" maxlength="18" id="dni">
+                <br><br>
+                <label for="interes">Interés: </label>
+                <select name="interes" id="interes">
+                    <option value="Elegir">Elegir</option>
+                    <option value="Comercial">Contacto comercial</option>
+                    <option value="Clientes">Atención al cliente</option>
+                    <option value="Proveedores">Contacto de proveedores</option>
+                </select>
+            </form>
+            <br>
+            <p id="error"></p>
+            <br>
+            <input type="button" id="bl" value="Enviar" onclick="validarEnviar()">
+            <script src="formulario.js"></script>
+        </body>
+
         <footer>
             <div class="cajaPie">
                 <a href="https://www.google.com/maps/place/Roma,+Italia/@41.9100711,12.5359979,11z/data=!3m1!4b1!4m6!3m5!1s0x132f6196f9928ebb:0xb90f770693656e38!8m2!3d41.8967068!4d12.4822025!16zL20vMDZjNjI?entry=ttu" target="_blank"><img src = "Imágenes/logoubicacion.png" class = "logosContacto"></a>
