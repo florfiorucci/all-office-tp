@@ -46,7 +46,7 @@
         </header>
 
         <body>
-            <h1>Validación de formulario</h1>
+            <h1>Contáctenos</h1>
              <form name="formulario" action="" method="POST">
                 <label for="nombre">Nombre completo: </label>
                 <input type="text" name="nombre" maxlength="30" id="nombre">
@@ -55,7 +55,7 @@
                 <input type="text" name="correo" size="30" maxlength="6" id="correo">
                 <br><br>
                 <label for="celular">Número telefónico: </label>
-                <input type="number" name="celular" size="15" maxlength="18" id="celular">
+                <input type="number" name="celular" size="15" maxlength="18" id="celular" required placeholder="011987654">
                 <br><br>
                 <label for="Tipo de Mobilario">Mobilario de interés: </label>
                 <select name="interes" id="interes">
@@ -63,6 +63,7 @@
                     <option value="Funcional">Línea Funcional</option>
                     <option value="Ejecutiva">Línea Ejecutiva</option>
                     <option value="Organizacional">Organizacional</option>
+                </select>
                 <br><br>
                 <label for="Motivo">Motivo de Consulta: </label>
                 <select name="motivo" id="motivo">
@@ -78,7 +79,7 @@
             <br>
             <input type="button" id="bl" value="Enviar" onclick="validarEnviar()">
             <script src="formulario.js"></script>
-        </main>
+        </body>
 
         <footer>
             <div class="cajaPie">
