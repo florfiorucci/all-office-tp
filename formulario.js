@@ -17,14 +17,12 @@ function validarEnviar(){
         return
     }
    
-    }
     // ANALIZO SI SELECCIONÓ DE FORMA CORRECTA I
     if(document.formulario.interes.selectedIndex == 0){
         // alert("Debe seleccionar un motivo de su contacto.")
         document.formulario.interes.focus()
         parrafo.innerHTML = "Seleccion incorrecta."
         return 
-    }
     }
     // ANALIZO SI SELECCIONÓ DE FORMA CORRECTA II
     if(document.formulario.motivo.selectedIndex == 0){
@@ -36,4 +34,3 @@ function validarEnviar(){
 
     parrafo.innerHTML = "Gracias por completar el formulario!"
     document.formulario.submit()
-}
