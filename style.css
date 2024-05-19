@@ -282,6 +282,7 @@ header {
     align-items: center;
     /* margin: 0 0 1em 0; */
     margin: auto;
+    text-align: center;
 }
 
 .mainContacto h1{
@@ -298,6 +299,7 @@ header {
     border-style: none;
     font-size: 14px;
     padding: 0.5em;
+    text-align: center;
 }
 
 .mainContacto select {
@@ -309,6 +311,7 @@ header {
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
+    text-align: center;
 }
 
 .mainContacto form {
