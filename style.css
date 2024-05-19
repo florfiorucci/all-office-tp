@@ -106,11 +106,11 @@ header {
     background-color: #1A4D2E;
     padding: 0 1em 1.6em;
     margin: 0.5em 0;
+    color: #E8DFCA;
 }
 
 .productosDestacados p {
     font-size: 20px;
-
 }
 
 .productosDestacados img {
@@ -124,6 +124,33 @@ header {
     background-color: #FFFFFF;
     border-radius: 8px;
     margin: 0.2em;
+}
+
+/* Página Nosotros */
+.mainNosotros{
+    padding: 1em;
+}
+
+.parrafoNosotros{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainNosotros p {
+    text-align: center;
+}
+
+.mainNosotros img {
+    width: 50%;
+    height: cover;
+}
+
+.contactenosNosotros{
+    text-align: center;
+    text-decoration: none;
 }
 
 /* Página Productos */
@@ -247,7 +274,7 @@ header {
 
 /* Página de Contacto */
 .mainContacto {
-    padding: 1.4em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
