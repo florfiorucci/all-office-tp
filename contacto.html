@@ -46,23 +46,31 @@
         </header>
 
         <body>
-            <h1>Validación de formulario</h1>
+            <h1>Contáctenos:</h1>
              <form name="formulario" action="" method="POST">
                 <label for="nombre">Nombre completo: </label>
-                <input type="text" name="nombre" maxlength="50" id="nombre">
+                <input type="text" name="nombre" maxlength="30" id="nombre">
                 <br><br>
-                <label for="edad">Edad:</label>
-                <input type="text" name="edad" size="3" maxlength="6" id="edad">
+                <label for="correo">Correo electrónico:</label>
+                <input type="text" name="correo" size="30" maxlength="6" id="correo">
                 <br><br>
-                <label for="dni">DNI: </label>
-                <input type="text" name="dni" size="12" maxlength="18" id="dni">
+                <label for="celular">Número telefónico: </label>
+                <input type="number" name="celular" size="15" maxlength="18" id="celular">
                 <br><br>
-                <label for="Tipo de Mobilario">Tipo de Mobilario: </label>
+                <label for="Tipo de Mobilario">Mobilario de interés: </label>
                 <select name="interes" id="interes">
-                    <option value="Opciones">Opciones</option>
+                    <option value="Opciones">Seleccione</option>
                     <option value="Funcional">Línea Funcional</option>
                     <option value="Ejecutiva">Línea Ejecutiva</option>
-                    <option value="Organización">Organización</option>
+                    <option value="Organizacional">Organizacional</option>
+                <br><br>
+                <label for="Motivo">Motivo de Consulta: </label>
+                <select name="Motivo" id="Motivo">
+                    <option value="Opciones">Seleccione</option>
+                    <option value="Productos">Línea Funcional</option>
+                    <option value="Proyectos de diseño">Línea Ejecutiva</option>
+                    <option value="Presupuestos">Organizacional</option>
+                    <option value="Otro">Otro</option>
                 </select>
             </form>
             <br>
