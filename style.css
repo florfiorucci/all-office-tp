@@ -283,10 +283,14 @@ header {
     margin: 0 0 1em 0;
 }
 
-.mainContacto label {
+.mainContacto h1{
+    text-align: center;
+}
+
+/* .mainContacto label {
     font-weight: bold;
     font-size: 1.2em;
-}
+} */
 
 .mainContacto input, textarea, select {
     border-radius: 2em;
@@ -300,13 +304,16 @@ header {
 }
 
 .mainContacto textarea {
+
     min-height: 100px;
     max-height: 200px;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .mainContacto form {
+    width: 450px;
     margin: auto;
+
 }
 
 #bl {
