@@ -279,7 +279,7 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
     /* margin: 0 0 1em 0; */
     margin: auto;
 }
