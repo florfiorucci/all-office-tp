@@ -314,6 +314,7 @@ header {
 .mainContacto form {
     width: 450px;
     margin: auto;
+    align-items: center;
 
 }
 
