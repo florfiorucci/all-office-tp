@@ -7,42 +7,29 @@ function validarEnviar(){
         parrafo.innerHTML = "Nombre incorrecto."
         return
     }
-    // ANALIZO LA EDAD
-    let edadEntera = parseInt(document.formulario.edad.value)
-    if(isNaN(edadEntera)){
-        // alert("Tiene que ingresar un número valido en la edad.")
-        document.formulario.edad.focus()
-        parrafo.innerHTML = "Edad incorrecta."
-        return
     }
-    else{
-        if(edadEntera < 18 || edadEntera > 65){
-            // alert("Tiene que ser mayor de edad o tener menos de 65 años.")
-            document.formulario.edad.focus()
-            parrafo.innerHTML = "Edad incorrecta."
-            return 
-        }
-    }
-    // ANALIZO EL DNI
-    let DNIentero = parseInt(document.formulario.dni.value)
-    if(isNaN(DNIentero)){
+    // ANALIZO EL CELULAR
+    let Celentero = parseInt(document.formulario.celular.value)
+    if(isNaN(Celentero)){
         // alert("Tiene que ingresar un número valido en el DNI.")
-        document.formulario.dni.focus()
-        parrafo.innerHTML = "DNI incorrecto."
+        document.formulario.celular.focus()
+        parrafo.innerHTML = "Número incorrecto."
         return
     }
-    else{
-        if(document.formulario.dni.value.length != 8){
-            // alert("El dni tiene que tener 8 numeros.")
-            document.formulario.dni.focus()
-            parrafo.innerHTML = "DNI incorrecto."
-            return 
-        }
+   
     }
-    // ANALIZO SI SELECCIONÓ DE FORMA CORRECTA
+    // ANALIZO SI SELECCIONÓ DE FORMA CORRECTA I
     if(document.formulario.interes.selectedIndex == 0){
         // alert("Debe seleccionar un motivo de su contacto.")
         document.formulario.interes.focus()
+        parrafo.innerHTML = "Seleccion incorrecta."
+        return 
+    }
+    }
+    // ANALIZO SI SELECCIONÓ DE FORMA CORRECTA II
+    if(document.formulario.motivo.selectedIndex == 0){
+        // alert("Debe seleccionar un motivo de su contacto.")
+        document.formulario.motivo.focus()
         parrafo.innerHTML = "Seleccion incorrecta."
         return 
     }
