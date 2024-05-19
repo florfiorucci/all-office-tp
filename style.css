@@ -288,7 +288,7 @@ header {
     font-size: 1.2em;
 }
 
-.mainContacto input, select {
+.mainContacto input, textarea, select {
     border-radius: 2em;
     border-style: none;
     font-size: 14px;
@@ -297,6 +297,16 @@ header {
 
 .mainContacto select {
     cursor: pointer;
+}
+
+.mainContacto textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 50%;
+}
+
+.mainContacto form {
+    margin: auto;
 }
 
 #bl {

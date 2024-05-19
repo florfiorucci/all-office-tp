@@ -48,11 +48,11 @@
         <main class="mainContacto">
             <h1>Contáctenos</h1>
              <form name="formulario" action="" method="POST">
-                <input type="text" name="Nombre" maxlength="30" id="nombre" placeholder="Nombre">
+                <input type="text" name="Nombre" maxlength="30" id="nombre" placeholder="Nombre" required>
                 <br><br>
-                <input type="text" name="Correo electrónico" size="30" maxlength="6" id="correo" placeholder="email@dominio.com">
+                <input type="text" name="Correo electrónico" size="30" maxlength="6" id="correo" placeholder="email@dominio.com" required>
                 <br><br>
-                <input type="number" name="Celular" size="15" maxlength="18" id="celular" placeholder="Tel. (Ej. 011987654)">
+                <input type="number" name="Celular" size="15" maxlength="18" id="celular" placeholder="Tel. (Ej. 011987654)" required>
                 <br><br>
                 <select name="interes" id="interes" >
                     <option value="Mobilario de interés" disabled selected>Mobilario de interés</option>
@@ -62,14 +62,14 @@
                 </select>
                 <br><br>
                 <select name="motivo" id="motivo">
-                    <option value="Motivo de Consulta" disabled selected>Motivo de Consulta</option>
+                    <option value="Motivo de Consulta" disabled selected>Motivo de consulta</option>
                     <option value="Productos">Productos</option>
                     <option value="Proyectos de diseño">Proyectos de diseño</option>
                     <option value="Presupuestos">Presupuestos</option>
                     <option value="Otro">Otro</option>
                 </select>
                 <br><br>
-                <textarea name="Mensaje" id="Mensaje" placeholder="Escriba su mensaje..."></textarea>
+                <textarea name="Mensaje" id="Mensaje" placeholder="Escriba su mensaje..." required></textarea>
                 <br><br>
             </form>
             <br>
