@@ -306,22 +306,14 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
     align-items: center;
-    /* margin: 0 0 1em 0; */
     margin: auto;
     text-align: center;
-    
 }
 
 .mainContacto h1{
     text-align: center;
 }
-
-/* .mainContacto label {
-    font-weight: bold;
-    font-size: 1.2em;
-} */
 
 .mainContacto input, textarea, select, form {
     border-radius: 2em;
@@ -351,7 +343,11 @@ header {
     margin: auto;
     align-items: center;
     text-align: center;
+}
 
+#error {
+    padding: 0;
+    font-size: 5px;
 }
 
 #bl {
@@ -363,10 +359,10 @@ header {
     font-weight: bold;
     background-color: #1A4D2E;
     color: #E8DFCA;
+    margin: 0 0 0.5em 0;
 }
 
 #bl:hover{
-    /* transform: scale(1.2); */
     cursor: pointer;
     background-color: #4f6f52;
     color: #000000;
