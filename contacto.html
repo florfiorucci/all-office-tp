@@ -48,31 +48,29 @@
         <main class="mainContacto">
             <h1>Contáctenos</h1>
              <form name="formulario" action="" method="POST">
-                <label for="nombre">Nombre completo: </label>
-                <input type="text" name="nombre" maxlength="30" id="nombre">
+                <input type="text" name="Nombre" size="50" maxlength="30" id="nombre"  placeholder="Nombre">
                 <br><br>
-                <label for="correo">Correo electrónico:</label>
-                <input type="text" name="correo" size="30" maxlength="6" id="correo">
+                <input type="text" name="Correo electrónico" size="50" maxlength="30" id="correo" placeholder="email@dominio.com">
                 <br><br>
-                <label for="celular">Número telefónico: </label>
-                <input type="number" name="celular" size="15" maxlength="18" id="celular" required placeholder="011987654">
+                <input type="number" name="Celular" size="50" maxlength="30" id="celular" placeholder="Tel. (Ej. 011987654)">
                 <br><br>
-                <label for="Tipo de Mobilario">Mobilario de interés: </label>
                 <select name="interes" id="interes">
-                    <option value="Opciones">Seleccione</option>
+                    <option value="Mobilario de interés" disabled selected>Mobilario de interés</option>
                     <option value="Funcional">Línea Funcional</option>
                     <option value="Ejecutiva">Línea Ejecutiva</option>
                     <option value="Organizacional">Organizacional</option>
                 </select>
                 <br><br>
-                <label for="Motivo">Motivo de Consulta: </label>
                 <select name="motivo" id="motivo">
-                    <option value="Opciones">Seleccione</option>
+                    <option value="Motivo de Consulta" disabled selected>Motivo de consulta</option>
                     <option value="Productos">Productos</option>
                     <option value="Proyectos de diseño">Proyectos de diseño</option>
                     <option value="Presupuestos">Presupuestos</option>
                     <option value="Otro">Otro</option>
                 </select>
+                <br><br>
+                <textarea name="Mensaje" id="Mensaje" placeholder="Escriba su mensaje..."></textarea>
+                <br><br>
             </form>
             <br>
             <p id="error"></p>

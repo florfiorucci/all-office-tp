@@ -285,27 +285,55 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: stretch;
-    margin: 0 0 1em 0;
+    align-items: center;
+    /* margin: 0 0 1em 0; */
+    margin: auto;
+    text-align: center;
+    
 }
 
-.mainContacto label {
+.mainContacto h1{
+    text-align: center;
+}
+
+/* .mainContacto label {
     font-weight: bold;
     font-size: 1.2em;
-}
+} */
 
-.mainContacto input, select {
+.mainContacto input, textarea, select, form {
     border-radius: 2em;
     border-style: none;
     font-size: 14px;
     padding: 0.5em;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mainContacto select {
     cursor: pointer;
 }
 
+.mainContacto textarea {
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.mainContacto form {
+    width: 450px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+
+}
+
 #bl {
+    width: 450px;
     padding: 0.5em;
     border-radius: 2em;
     text-transform: uppercase;
