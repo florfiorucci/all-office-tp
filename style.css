@@ -312,7 +312,7 @@ header {
 
 .mainContacto textarea {
 
-    min-height: 50px;
+    min-height: auto;
     max-height: 200px;
     max-width: 100%;
     text-align: center;
