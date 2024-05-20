@@ -313,6 +313,7 @@ header {
 .mainContacto textarea {
     max-height: 200px;
     max-width: 100%;
+    min-width: 100%;
     text-align: center;
     align-items: center;
 }
@@ -326,6 +327,7 @@ header {
 }
 
 #bl {
+    width: 450px;
     padding: 0.5em;
     border-radius: 2em;
     text-transform: uppercase;
@@ -333,8 +335,6 @@ header {
     font-weight: bold;
     background-color: #1A4D2E;
     color: #E8DFCA;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #bl:hover{
