@@ -294,7 +294,7 @@ header {
     font-size: 1.2em;
 } */
 
-.mainContacto input, textarea, select {
+.mainContacto input, textarea, select, form {
     border-radius: 2em;
     border-style: none;
     font-size: 14px;
