@@ -283,6 +283,8 @@ header {
     /* margin: 0 0 1em 0; */
     margin: auto;
     text-align: center;
+    width: 70%;
+    box-sizing: border-box;
 }
 
 .mainContacto h1{
