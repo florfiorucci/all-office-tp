@@ -283,8 +283,7 @@ header {
     /* margin: 0 0 1em 0; */
     margin: auto;
     text-align: center;
-    width: 70%;
-    box-sizing: border-box;
+    
 }
 
 .mainContacto h1{
@@ -303,6 +302,8 @@ header {
     padding: 0.5em;
     text-align: center;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mainContacto select {
