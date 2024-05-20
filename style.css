@@ -391,6 +391,9 @@ header {
 /* Pie de página */
 footer{
     background-image: linear-gradient(to right, #E8DFCA, #4f6f52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logosContacto {
@@ -480,6 +483,13 @@ footer{
         transition: 0.3s;
     }
 
+    /* Página Nosotros */
+    .nuestrosDiferenciales p{
+        display: grid;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
     /* Categorías que trabajamos */
     .categorias {
         display: flex;
@@ -504,6 +514,11 @@ footer{
   @media only screen and (min-width: 768px){
     .navMenu li {
         padding: 0 15px;
+    }
+
+    /* Página Nosotros */
+    .nuestrosDiferenciales img, p{
+        display: flex;
     }
 
     .categorias {
