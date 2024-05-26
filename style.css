@@ -367,7 +367,8 @@ header {
 
 #error {
     padding: 0;
-    font-size: 5px;
+    font-size: 14px;
+    color: red;
 }
 
 #bl {

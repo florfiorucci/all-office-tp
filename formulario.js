@@ -1,27 +1,33 @@
 function validarEnviar(){
     parrafo = document.getElementById("error")
-    // ANALIZO EL NOMBRE
-    if(document.formulario.nombre.value.length <= 3){
-        // alert("Ingrese un nombre correcto.")
+    if(document.formulario.nombre.value.length <= 2){
         document.formulario.nombre.focus()
         parrafo.innerHTML = "Nombre incorrecto."
         return
     }
-
-    // ANALIZO SI SELECCIONÓ DE FORMA CORRECTA I
+    var ExpReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    var validez = ExpReg.test(correo)
+    if(validez == false){
+        document.formulario.correo.focus()
+        parrafo.innerHTML = "Correo incorrecto."
+        return
+    }
+    let NumeroEntero = parseInt(document.formulario.celular.value)
+    if(isNaN(NumeroEntero)){
+        document.formulario.celular.focus()
+        parrafo.innerHTML = "Número incorrecto."
+        return
+    }
     if(document.formulario.interes.selectedIndex == 0){
-        // alert("Debe seleccionar un motivo de su contacto.")
         document.formulario.interes.focus()
-        parrafo.innerHTML = "Seleccion incorrecta."
+        parrafo.innerHTML = "Elija una opción."
         return 
     }
-    // ANALIZO SI SELECCIONÓ DE FORMA CORRECTA II
     if(document.formulario.motivo.selectedIndex == 0){
-        // alert("Debe seleccionar un motivo de su contacto.")
         document.formulario.motivo.focus()
-        parrafo.innerHTML = "Seleccion incorrecta."
+        parrafo.innerHTML = "Elija una opción."
         return 
     }
-    parrafo.innerHTML = "Gracias por completar el formulario!"
+    parrafo.innerHTML = "Gracias por completar el formulario. A la brevedad nos pondremos en contacto con usted."
     document.formulario.submit()
 }
