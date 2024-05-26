@@ -6,8 +6,8 @@ function validarEnviar(){
         return
     }
     ExpReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    let validez = ExpReg.test(correo);
-    if(document.formulario.correo.value == false){
+    validez = ExpReg.test(correo);
+    if(document.formulario.correo.value == validez == false){
         document.formulario.correo.focus()
         parrafo.innerHTML = "Correo incorrecto."
         return
