@@ -159,6 +159,26 @@ header {
     padding: 1em 0.5em;
 }
 
+.nuestrosDiferenciales {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 0 3em 0;
+    justify-items: center;
+}
+
+.nuestrosDiferenciales h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.nuestrosDiferenciales p{
+    display: none;
+}
+
+.nuestrosDiferenciales img {
+    width: 3em;
+}
+
 .contactenosNosotros{
     text-align: center;
     padding: 0 0 1em 0;
@@ -371,6 +391,9 @@ header {
 /* Pie de página */
 footer{
     background-image: linear-gradient(to right, #E8DFCA, #4f6f52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logosContacto {
@@ -460,6 +483,13 @@ footer{
         transition: 0.3s;
     }
 
+    /* Página Nosotros */
+    .nuestrosDiferenciales p{
+        display: grid;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
     /* Categorías que trabajamos */
     .categorias {
         display: flex;
@@ -484,6 +514,11 @@ footer{
   @media only screen and (min-width: 768px){
     .navMenu li {
         padding: 0 15px;
+    }
+
+    /* Página Nosotros */
+    .nuestrosDiferenciales img, p{
+        display: flex;
     }
 
     .categorias {
