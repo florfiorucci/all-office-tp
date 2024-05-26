@@ -5,13 +5,13 @@ function validarEnviar(){
         parrafo.innerHTML = "Nombre incorrecto."
         return
     }
-    // ExpReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    // let validez = ExpReg.test(correo);
-    // if(validez == false){
-    //     document.formulario.correo.focus()
-    //     parrafo.innerHTML = "Correo incorrecto."
-    //     return
-    // }
+    ExpReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    let validez = ExpReg.test(correo);
+    if(document.formulario.correo.value == false){
+        document.formulario.correo.focus()
+        parrafo.innerHTML = "Correo incorrecto."
+        return
+    }
     let NumeroEntero = parseInt(document.formulario.celular.value)
     if(isNaN(NumeroEntero)){
         document.formulario.celular.focus()
