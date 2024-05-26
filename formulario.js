@@ -5,8 +5,8 @@ function validarEnviar(){
         parrafo.innerHTML = "Nombre incorrecto."
         return
     }
-    ExpReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    validez = ExpReg.test(correo);
+    let ExpReg =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+    let validez = ExpReg.test(document.formulario.correo.value);
     if(validez == false){
         document.formulario.correo.focus()
         parrafo.innerHTML = "Correo incorrecto."
