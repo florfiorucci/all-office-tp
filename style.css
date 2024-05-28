@@ -299,6 +299,8 @@ header {
 .presentacionProductos h3{
     vertical-align: middle;
     display: contents;
+    color: #1A4D2E;
+    font-weight: bold;
 }
 
 .presentacionProductos img {
