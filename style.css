@@ -91,12 +91,16 @@ header {
     text-transform: uppercase;
     font-size: 22px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .fraseEmpresa {
     font-family: "Briem Hand", cursive;
-    text-align: center;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .productosDestacados {
@@ -114,6 +118,8 @@ header {
 
 .productosDestacados p {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .productosDestacados img {
@@ -637,11 +643,11 @@ footer{
     .menuIconos ul {
         display: flex;
         list-style: none;
-        padding: 8px 10px 0;
+        padding: 10px 10px 0;
     }
 
     .menuIconos img {
-        width: 32px;
+        width: 28px;
         padding: 2px 10px;
         margin: 0 10px;
     }
