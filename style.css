@@ -81,6 +81,10 @@ header {
     display: none;
 }
 
+.menuIconos{
+    display: none;
+}
+
 /* Página Inicio */
 .caracteristicasEmpresa {
     font-weight: bold;
@@ -91,7 +95,6 @@ header {
 
 .fraseEmpresa {
     font-family: "Briem Hand", cursive;
-    font-optical-sizing: auto;
     text-align: center;
     font-size: 20px;
 }
@@ -389,62 +392,6 @@ header {
     color: #000000;
 }
 
-/* Pie de página */
-footer{
-    background-image: linear-gradient(to right, #E8DFCA, #4f6f52);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logosContacto {
-    padding: 0.1em;
-    font-size: 30px;
-    width: 2em;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
-
-.logosContacto:hover{
-    transform: scale(1.2);
-}
-
-.cajaPie {
-    text-align: center;
-    padding: 2% 0 0 0;
-}
-
-.suscripcion {
-    text-align: center;
-    bottom: 1em;
-}
-
-.input-padron{
-    padding: 0.3em;
-    border: none;
-    border-radius: 10px;
-    margin: 0 0.5em;
-}
-
-.botonEnviar{
-    text-transform: uppercase;
-    margin-left: 0.3em;
-    padding: 0.6em;
-    border: none;
-    border-radius: 14px;
-    font-size: 0.6em;
-    vertical-align: middle;
-}
-
-.copyright {
-    font-size: 0.8em;
-    text-align: center;
-    bottom: 0.4em;
-    padding: 0.5em;
-}
-
 /*    PAGINA DE PROYECTOS      */
 .entradaDeTexto{
     font-size: 25px;
@@ -622,15 +569,95 @@ footer{
     opacity: 1;
 }
 
+/* Pie de página */
+footer{
+    background-image: linear-gradient(to right, #E8DFCA, #4f6f52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logosContacto {
+    padding: 0.1em;
+    font-size: 30px;
+    width: 2em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.logosContacto:hover{
+    transform: scale(1.2);
+}
+
+.cajaPie {
+    text-align: center;
+    padding: 2% 0 0 0;
+}
+
+.suscripcion {
+    text-align: center;
+    bottom: 1em;
+}
+
+.input-padron{
+    padding: 0.3em;
+    border: none;
+    border-radius: 10px;
+    margin: 0 0.5em;
+}
+
+.botonEnviar{
+    text-transform: uppercase;
+    margin-left: 0.3em;
+    padding: 0.6em;
+    border: none;
+    border-radius: 14px;
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+
+.copyright {
+    font-size: 0.8em;
+    text-align: center;
+    bottom: 0.4em;
+    padding: 0.5em;
+}
+
 @media only screen and (min-width: 576px) {
     #menu {
         display: none;
     }
-
-    .cajaMenu {
+   
+    .menuIconos {
         display: flex;
-        padding: 14px 5px 0 0;
-        font-size: 12px;
+    }
+
+    .menuIconos ul {
+        display: flex;
+        list-style: none;
+        padding: 8px 10px 0;
+    }
+
+    .menuIconos img {
+        width: 32px;
+        padding: 2px 10px;
+        margin: 0 10px;
+    }
+
+    .menuIconos img:hover{
+        color: #1A4D2E;
+        padding: 2px 10px;
+        background-color: #FFFFFF;
+        border-radius: 2em;
+        transition: 0.3s;
+    }
+
+        /* .cajaMenu {
+        display: flex;
+        padding: 14px 0 0 0;
+        font-size: 10px;
     }
         
     .cajaMenu ul {
@@ -638,6 +665,7 @@ footer{
         justify-content: space-between;
         vertical-align: middle;
         list-style: none;
+        padding: 1px 2px 0 0;
     }
 
     .cajaMenu ul li {
@@ -652,14 +680,7 @@ footer{
         text-transform: uppercase;
         font-size: 18px;
         display: flex;
-    }
-    
-    .cajaMenu a:hover{
-        color: #1A4D2E;
-        background-color: #FFFFFF;
-        border-radius: 2em;
-        transition: 0.3s;
-    }
+    } */
 
     /* Página Nosotros */
     .nuestrosDiferenciales p{
@@ -691,8 +712,49 @@ footer{
 
   @media only screen and (min-width: 768px){
     .navMenu li {
-        padding: 0 15px;
+        padding: 0 10px;
     }
+
+    .menuIconos {
+        display: none;
+    }
+
+    .cajaMenu {
+        display: flex;
+        padding: 14px 0 0 0;
+        font-size: 10px;
+    }
+        
+    .cajaMenu ul {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        list-style: none;
+        padding: 1px 2px 0 0;
+    }
+
+    .cajaMenu ul li {
+        text-decoration: none;
+    }
+
+    .cajaMenu li a{
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+        display: flex;
+    }
+    
+    .cajaMenu a:hover{
+        color: #1A4D2E;
+        background-color: #FFFFFF;
+        border-radius: 2em;
+        transition: 0.3s;
+    }
+
+    /* Página Inicio */
 
     /* Página Nosotros */
     .nuestrosDiferenciales img, p{
