@@ -188,6 +188,27 @@ header {
     width: 3em;
 }
 
+.seccionValores {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 0 3em 0;
+    justify-items: center;
+}
+
+.seccionValores h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.seccionValores p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.seccionValores img {
+    width: 3em;
+}
+
 .contactenosNosotros{
     text-align: center;
     padding: 0 0 1em 0;
@@ -400,7 +421,7 @@ header {
     color: #000000;
 }
 
-/*    PAGINA DE PROYECTOS      */
+/*    Página de Proyectos      */
 .entradaDeTexto{
     font-size: 25px;
     margin: 50px 10% 0px 10%;
