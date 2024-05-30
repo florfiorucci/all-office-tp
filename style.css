@@ -363,7 +363,6 @@ header {
 }
 
 .presentacionProductos li:hover{
-    /* transform: scale(1.08); */
     color: #4f6f52;
     box-shadow: 0px 0px 6px 3px;
 }
@@ -698,34 +697,6 @@ footer{
         border-radius: 2em;
         transition: 0.3s;
     }
-
-        /* .cajaMenu {
-        display: flex;
-        padding: 14px 0 0 0;
-        font-size: 10px;
-    }
-        
-    .cajaMenu ul {
-        display: flex;
-        justify-content: space-between;
-        vertical-align: middle;
-        list-style: none;
-        padding: 1px 2px 0 0;
-    }
-
-    .cajaMenu ul li {
-        text-decoration: none;
-    }
-
-    .cajaMenu li a{
-        text-decoration: none;
-        color: black;
-        padding: 5px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 18px;
-        display: flex;
-    } */
 
     /* Página Nosotros */
     .nuestrosDiferenciales h2{
