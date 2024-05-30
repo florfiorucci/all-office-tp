@@ -147,13 +147,19 @@ header {
     margin: 0;
 }
 
-.parrafoNosotros{
+.parrafoNosotros {
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+/* .parrafoNosotros{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .mainNosotros p {
     text-align: center;
@@ -161,23 +167,36 @@ header {
 
 .mainNosotros img {
     width: 50%;
+    border-radius: 10px;
 }
 
 .premisaNosotros {
     font-size: 1.2em;
     padding: 1em 0.5em;
+    font-family: "Briem Hand", cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 40px 20px;
 }
 
 .nuestrosDiferenciales {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 0 0 3em 0;
+    margin: 0 1.5em 3em;
     justify-items: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0 0 25px 0;
+    box-shadow: 0px 0px 30px 4px #4f6f52;
+    text-transform: uppercase;
 }
 
 .nuestrosDiferenciales h2 {
     grid-column-start: 1;
     grid-column-end: 5;
+    font-size: 18px;
 }
 
 .nuestrosDiferenciales p{
@@ -185,7 +204,7 @@ header {
 }
 
 .nuestrosDiferenciales img {
-    width: 3em;
+    width: 2.5em;
 }
 
 .seccionValores {
@@ -712,6 +731,10 @@ footer{
     } */
 
     /* Página Nosotros */
+    .nuestrosDiferenciales h2{
+        font-size: 24px;
+    }
+
     .nuestrosDiferenciales p{
         display: grid;
         font-weight: bold;
@@ -769,7 +792,7 @@ footer{
     .cajaMenu li a{
         text-decoration: none;
         color: black;
-        padding: 5px;
+        padding: 5px 2px;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 18px;
@@ -790,10 +813,27 @@ footer{
     /* Página Inicio */
 
     /* Página Nosotros */
-    .nuestrosDiferenciales img, p{
-        display: flex;
+    .parrafoNosotros {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 0;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .premisaNosotros p{
+        justify-content: center;
     }
 
+    .nuestrosDiferenciales img, p{
+        display: flex;
+        padding: 0px 5px;
+    }
+    
+    /* Página Productos */
     .categorias {
         padding: 3em;
         border-radius: 5em;
@@ -817,7 +857,6 @@ footer{
         display: flex;
         width: 3em;
     }
-
   }
 
   
