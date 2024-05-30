@@ -93,6 +93,8 @@ header {
     text-align: center;
     display: flex;
     justify-content: center;
+    animation: slideInLeft;
+    animation-duration: 7s;
 }
 
 .fraseEmpresa {
@@ -144,7 +146,7 @@ header {
 .mainNosotros h1{
     padding: 0;
     font-size: 1.5em;
-    margin: 0;
+    margin: 0 0 1em;
 }
 
 .parrafoNosotros {
@@ -152,14 +154,6 @@ header {
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
     grid-gap: 5px;
 }
-
-/* .parrafoNosotros{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-} */
 
 .mainNosotros p {
     text-align: center;
@@ -231,6 +225,9 @@ header {
 .contactenosNosotros{
     text-align: center;
     padding: 0 0 1em 0;
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .contactenosNosotros a{
@@ -815,15 +812,23 @@ footer{
     /* Página Nosotros */
     .parrafoNosotros {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template: 1fr 1fr / 1fr 1fr;
         grid-gap: 40px 0;
         align-content: center;
         justify-content: center;
         align-items: center;
         justify-items: center;
+        margin: 0 60px;
+    }
+
+    .parrafoNosotros p{
+        font-size: 20px;
     }
     
+    .parrafoNosotros img {
+        width: 80%;
+    }
+
     .premisaNosotros p{
         justify-content: center;
     }
