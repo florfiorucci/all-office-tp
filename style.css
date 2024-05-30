@@ -775,6 +775,10 @@ footer{
         font-size: 18px;
         display: flex;
     }
+
+    .cajaMenu p {
+        font-weight: bold;
+    }
     
     .cajaMenu a:hover{
         color: #1A4D2E;
