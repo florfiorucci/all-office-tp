@@ -86,6 +86,13 @@ header {
 }
 
 /* Página Inicio */
+
+.entradaDeTexto{
+    font-size: 25px;
+    margin: 50px 10% 0px 10%;
+    text-align: center;
+}
+
 .caracteristicasEmpresa {
     font-weight: bold;
     text-transform: uppercase;
