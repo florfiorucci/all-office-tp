@@ -102,12 +102,15 @@
             </div>
 
             <div class="suscripcion">
-                <p>Suscríbete a nuestro newsletter: 
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com"><input type="submit" value="Enviar" class="botonEnviar"></p>
+                <form id="newsletter">
+                    <p>Suscríbete a nuestro Newsletter:
+                    <input type="email" name="correonews"  size="25" maxlength="30" id="correonews" class="input-padron" required placeholder="email@dominio.com"><input type="submit" value="Enviar" class="botonEnviar" onclick="newsletter()"></p>
+                    <p id="error1" class="message"></p>
+                </form>
             </div>
-
+            <script src="formulario.js"></script>
             <div class="copyright">
-                <p class="copyright">&copy Copyright All - Office 2024</p>
+                <p class="copyright">&copy Copyright All-Office&#174 2024</p>
             </div>
         </footer>
     </body>
