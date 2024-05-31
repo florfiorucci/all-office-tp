@@ -665,6 +665,14 @@ footer{
     border-radius: 14px;
     font-size: 0.6em;
     vertical-align: middle;
+    background-color: #1A4D2E;
+    color: #E8DFCA;
+}
+    
+#botonEnviar:hover{
+    cursor: pointer;
+    background-color: #4f6f52;
+    color: #000000;
 }
 
 .copyright {
