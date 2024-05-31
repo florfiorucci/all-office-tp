@@ -81,10 +81,6 @@ header {
     display: none;
 }
 
-.menuIconos{
-    display: none;
-}
-
 /* Página Inicio */
 .logoInicio {
     text-align: center;
@@ -178,7 +174,17 @@ header {
 .mainNosotros h1{
     padding: 0;
     font-size: 1.5em;
-    margin: 0 0 1em;
+    margin: 0 0 0.5em;
+}
+
+.mainNosotros h2 {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.mainNosotros a{
+    text-decoration: none;
+    color: #1A4D2E;
 }
 
 .parrafoNosotros {
@@ -210,10 +216,10 @@ header {
 .nuestrosDiferenciales {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 0 1.5em 3em;
+    margin: 1.6em 1.5em 3em;
     justify-items: center;
     background-color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 1em;
     padding: 0 0 25px 0;
     box-shadow: 0px 0px 30px 4px #4f6f52;
     text-transform: uppercase;
@@ -267,7 +273,6 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     color: #000000;
-    border: 1px solid black;
     border-radius: 1.5em;
     background-color: white;
     padding: 0.5em;
@@ -712,34 +717,6 @@ footer{
 }
 
 @media only screen and (min-width: 576px) {
-    #menu {
-        display: none;
-    }
-   
-    .menuIconos {
-        display: flex;
-    }
-
-    .menuIconos ul {
-        display: flex;
-        list-style: none;
-        padding: 10px 10px 0;
-    }
-
-    .menuIconos img {
-        width: 28px;
-        padding: 2px 10px;
-        margin: 0 10px;
-    }
-
-    .menuIconos img:hover{
-        color: #1A4D2E;
-        padding: 2px 10px;
-        background-color: #FFFFFF;
-        border-radius: 2em;
-        transition: 0.3s;
-    }
-
     /* Página Nosotros */
     .nuestrosDiferenciales h2{
         font-size: 24px;
@@ -777,7 +754,7 @@ footer{
         padding: 0 10px;
     }
 
-    .menuIconos {
+    #menu {
         display: none;
     }
 
