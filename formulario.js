@@ -34,11 +34,13 @@ function validarEnviar(){
 
 function newsletter(){
     parrafo = document.getElementById("error")
-        let ExpReg =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
-        let validez = ExpReg.test(document.formulario.correonews.value);
-        if(validez == false){
-            document.formulario.correonews.focus()
-            parrafo.innerHTML = "Correo electrónico incorrecto."
-            return  
-}   parrafo.innerHTML = "Gracias por suscribirse. En breve recibirá novedades."
+    let ExpReg =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+    let validez = ExpReg.test(document.formulario.correonews.value);
+    if(validez == false){
+        document.formulario.correonews.focus()
+        parrafo.innerHTML = "Correo electrónico incorrecto."
+        return
+}       
+    parrafo.innerHTML = "Gracias por suscribirse. En breve recibirá novedades."
     document.formulario.submit()
+}
