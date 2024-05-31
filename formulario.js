@@ -42,8 +42,5 @@ function newsletter(){
     if(validez1 == false){
         document.getElementById("correonews").focus();
         return;
-}       
-    parrafoerror.innerHTML = "Gracias por suscribirse. En breve recibirá novedades."
-    parrafoerror.classList.add("message");
-    parrafoerror.classList.remove("error");
+    }       
 }
