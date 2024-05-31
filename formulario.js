@@ -41,9 +41,6 @@ function newsletter(){
     let validez1 = ExpReg1.test(document.getElementById("correonews").value);
     if(validez1 == false){
         document.getElementById("correonews").focus();
-        parrafoerror.innerHTML = "Correo electrónico incorrecto."
-        parrafoerror.classList.add("error");
-        parrafoerror.classList.remove("message");
         return;
 }       
     parrafoerror.innerHTML = "Gracias por suscribirse. En breve recibirá novedades."
