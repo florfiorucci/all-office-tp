@@ -94,7 +94,7 @@ header {
     font-size: 1em;
 }
 
-.entradaDeTexto{
+.parrafoInicio {
     margin: 20px 12px 0;
     text-align: center;
 }
@@ -461,6 +461,7 @@ header {
     margin: 50px 10% 0px 10%;
     text-align: center;
 }
+
 .estiloAuxiliar{
     color: #E8DFCA;
     background-color: #4f6f52;
