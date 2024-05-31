@@ -33,14 +33,13 @@ function validarEnviar(){
 }
 
 function newsletter(){
-    parrafo = document.getElementById("error1")
+    parrafoerror = document.getElementById("error1")
     let ExpReg1 =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
     let validez1 = ExpReg1.test(document.newsletter.correonews.value);
     if(validez1 == false){
         document.newsletter.correonews.focus()
-        parrafo.innerHTML = "Correo electrónico incorrecto."
+        parrafoerror.innerHTML = "Correo electrónico incorrecto."
         return
 }       
-    parrafo.innerHTML = "Gracias por suscribirse. En breve recibirá novedades."
-    document.newsletter.submit()
+    parrafoerror.innerHTML = "Gracias por suscribirse. En breve recibirá novedades."
 }
