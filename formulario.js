@@ -31,15 +31,22 @@ function validarEnviar(){
     parrafo.innerHTML = "Gracias por completar el formulario. A la brevedad nos pondremos en contacto con usted."
     document.formulario.submit()
 }
-
+document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario
+    newsletter(); // Llamar a la función newsletter para manejar la validación y mensajes
+});
 function newsletter(){
     parrafoerror = document.getElementById("error1")
     let ExpReg1 =  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
-    let validez1 = ExpReg1.test(document.newsletter.correonews.value);
+    let validez1 = ExpReg1.test(document.getElementById("correonews").value);
     if(validez1 == false){
-        document.newsletter.correonews.focus()
+        document.getElementById("correonews").focus();
         parrafoerror.innerHTML = "Correo electrónico incorrecto."
-        return
+        parrafoerror.classList.add("error");
+        parrafoerror.classList.remove("message");
+        return;
 }       
     parrafoerror.innerHTML = "Gracias por suscribirse. En breve recibirá novedades."
+    parrafoerror.classList.add("message");
+    parrafoerror.classList.remove("error");
 }
