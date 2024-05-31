@@ -177,11 +177,6 @@ header {
     margin: 0 0 0.5em;
 }
 
-.mainNosotros h2 {
-    font-size: 0.8em;
-    font-style: italic;
-}
-
 .mainNosotros a{
     text-decoration: none;
     color: #1A4D2E;
@@ -202,15 +197,9 @@ header {
     border-radius: 10px;
 }
 
-.premisaNosotros {
+.masNosotros {
     font-size: 1.2em;
-    padding: 1em 0.5em;
-    font-family: "Briem Hand", cursive;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0 40px 20px;
+    font-style: italic;
 }
 
 .nuestrosDiferenciales {
@@ -832,7 +821,6 @@ footer{
     .parrafoNosotros {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
-        grid-gap: 40px 0;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -852,6 +840,9 @@ footer{
         justify-content: center;
     }
 
+    .masNosotros {
+        margin: 20px;
+    }
     .nuestrosDiferenciales img, p{
         display: flex;
         padding: 0px 5px;
