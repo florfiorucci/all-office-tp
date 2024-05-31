@@ -90,27 +90,37 @@ header {
     text-align: center;
 }
 
+.logoInicio img {
+    margin: 30px 0 0 0;
+}
+
 .logoInicio h1{
-    font-size: 1em;
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
 }
 
 .parrafoInicio {
-    margin: 20px 12px 0;
+    margin: 24px 12px;
     text-align: center;
 }
 
-.entradaDeTexto h2 {
+.parrafoInicio h2 {
     font-size: 1.2em;
 }
 
-.entradaDeTexto p{
+.parrafoInicio p{
     font-size: 0.8em;
+}
+
+.parrafoInicio a{
+    text-decoration: none;
+    color: #1A4D2E;
 }
 
 .caracteristicasEmpresa {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -126,14 +136,13 @@ header {
 
 .productosDestacados {
     text-align: center;
-    text-transform: uppercase;
     font-weight: bold;
     border: 2px solid #4f6f52;
     border-radius: 8px;
     position: relative;
     background-color: #1A4D2E;
     padding: 0 1em 1.6em;
-    margin: 0.5em 0;
+    margin: 1em;
     color: #E8DFCA;
 }
 
