@@ -438,7 +438,7 @@ header {
 }
 
 .mainContacto form {
-    width: 450px;
+    width: 350px;
     margin: auto;
     align-items: center;
     text-align: center;
@@ -451,7 +451,7 @@ header {
 }
 
 #bl {
-    width: 450px;
+    width: 350px;
     padding: 0.5em;
     border-radius: 2em;
     text-transform: uppercase;
