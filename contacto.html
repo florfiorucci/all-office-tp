@@ -68,7 +68,7 @@
                 <br><br>
                 <input type="email" name="correo" size="50" maxlength="30" id="correo" placeholder="email@dominio.com">
                 <br><br>
-                <input type="number" name="Celular" size="50" maxlength="30" id="celular" placeholder="Tel. (Ej. 011987654)">
+                <input type="number" name="Celular" size="50" maxlength="30" id="celular" placeholder="Cel. (Ej. 011987654)">
                 <br><br>
                 <select name="interes" id="interes">
                     <option value="Mobilario de interés" disabled selected>Mobilario de interés</option>
@@ -104,12 +104,13 @@
             </div>
 
             <div class="suscripcion">
-                <p>Suscríbete a nuestro newsletter: 
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com"><input type="submit" value="Enviar" class="botonEnviar"></p>
+                <p>Suscríbete a nuestro newsletter:
+                <input type="email" name="correonews"  size="50" maxlength="30" id="correonews" class="input-padron" required placeholder="email@dominio.com"><input type="submit" value="Enviar" class="botonEnviar" id="bl2" onclick="newsletter()"></p>
+                <p id="error"></p>
             </div>
 
             <div class="copyright">
-                <p class="copyright">&copy Copyright All - Office 2024</p>
+                <p class="copyright">&copy Copyright All-Office&#174 2024</p>
             </div>
         </footer>
     </body>
