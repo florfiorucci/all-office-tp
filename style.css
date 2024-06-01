@@ -463,12 +463,12 @@ header {
     color: #000000;
 }
 
-/*    Página de Proyectos      */
-
-.MainProyectos{
+/* Página Proyectos */
+.mainProyectos{
     text-align: center;
     justify-self: center;
 }
+
 .entradaDeTexto{
     font-size: 20px;
     margin: 40px 20px 0;
@@ -481,21 +481,18 @@ header {
     border-radius: 50px;
 }
 
-.proyectosGrid1{
-    width:100%;
+.proyectosGrid1, .proyectosGrid2, .proyectosGrid3{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
     background-color: #1A4D2E;
-    padding: 0px;
-    transition: 0.5s ease;
     border-radius: 25px;
+    padding: 10px;
+    margin: 1.5em 0 0;
 }
 
-.proyectosGrid1 > div {
+.proyectosGrid1 > div, .proyectosGrid2 > div, .proyectosGrid3 > div {
     text-align: center;
     padding: 4%;
-    height: 350px;
+    height: auto;
 }
 
 div > ul{
@@ -516,155 +513,38 @@ div > ul{
 #contenidoImagem{
     background-color: none;
 }
-.proyectosGrid1:hover{
-    transform: scaleY(1.2);
-}
 
-h3{
+.proyectosGrid1 h3, .proyectosGrid2 h3, .proyectosGrid3 h3{
     background-color: #4f6f52;
     border-radius: 30px;
+    margin: 0.5em;
 }
 
-.imagenGrid1{
-    transition: 0.3s ease;
-    justify-content: center;
-    height: 350px;
+.proyectosGrid1 p, .proyectosGrid2 p, .proyectosGrid3 p{
+    margin: 0;
 }
 
-.imagenGrid1:hover{
+.imagenGrid1:hover, .imagenGrid2:hover, .imagenGrid3:hover{
     transform: scale(1.2);
 }
 
-.imagenGrid1 img{
-    width: 100%;
-    height: 100%;
+.imagenGrid1 img, .imagenGrid2 img, .imagenGrid3 img {
     border-radius: 5%;
+    height: auto;
+    max-width: 100%;
 }
 
-.textosGrid1 {
-    position: relative;
-    opacity: 0;
-    transition: 0.6s ease ;
+.textosGrid1, .textosGrid2, .textosGrid3 {
     height: 350px;
-}
-
-.textosGrid1 p,h3{
-    margin: 12px;
-    line-height: 1.5;
     color: #E8DFCA;
-}
-
-.proyectosGrid1:hover .textosGrid1{
-    opacity: 1;
-}
-
-.proyectosGrid2 {
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    background-color: #1A4D2E;
-    padding: 0px;
-    transition: 0.5s ease;
-    border-radius: 25px;
-}
-
-.proyectosGrid2 > div {
-    text-align: center;
-    height: 350px;
-    padding: 4%;
-}
-
-.proyectosGrid2:hover{
-    transform: scaleY(1.2);
-}
-
-.imagenGrid2{
-    transition: 0.3s ease;
+    margin: 0 0 8px;
     justify-content: center;
 }
 
-.imagenGrid2:hover{
-    transform: scale(1.2);
-}
-
-.imagenGrid2 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-}
-
-.textosGrid2 {
-    position: relative;
-    opacity: 0;
-    transition: 0.6s ease ;
-    height: 350px;
-}
-
-.textosGrid2 p,h3{
-    margin: 12px;
-    line-height: 1.5;
-    opacity: 1;
-    color: #E8DFCA;
-
-}
-
-.proyectosGrid2:hover .textosGrid2{
-    opacity: 1;
-}
-
-.proyectosGrid3{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    background-color: #1A4D2E;
-    padding: 0px;
-    transition: 0.5s ease;
-    border-radius: 25px;
-}
-
-.proyectosGrid3 > div {
-    text-align: center;
-    height: 350px;
-    padding: 4%;
-}
-
-.proyectosGrid3:hover{
-    transform: scaleY(1.2);
-}
-
-.imagenGrid3{
-    transition: 0.3s ease;
-    justify-content: center;
-}
-
-.imagenGrid3:hover{
-    transform: scale(1.2);
-}
-
-.imagenGrid3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-}
-
-.textosGrid3 {
-    position: relative;
-    opacity: 0;
-    transition: 0.6s ease ;
-    height: 350px;
-}  
-
-.textosGrid3 p,h3{
-    margin: 12px;
-    line-height: 1.5;
-    opacity: 1;
-    color: #E8DFCA;
-}
-
-.proyectosGrid3:hover .textosGrid3{
-    opacity: 1;
+.textosGrid1 ul, .textosGrid2 ul, .textosGrid3 ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
 }
 
 /* Pie de página */
@@ -901,9 +781,207 @@ footer{
     }
 
     /* Página Proyectos */
+    .mainProyectos{
+        text-align: center;
+        justify-self: center;
+    }
+
     .entradaDeTexto{
         font-size: 25px;
     }
+
+    .estiloAuxiliar{
+        color: #E8DFCA;
+        background-color: #4f6f52;
+        border-radius: 50px;
+    }
+
+    .proyectosGrid1{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        background-color: #1A4D2E;
+        padding: 0px;
+        transition: 0.5s ease;
+        border-radius: 25px;
+    }
+
+    .proyectosGrid1 > div {
+        text-align: center;
+        padding: 4%;
+        height: 350px;
+    }
+
+    div > ul{
+        color: #E8DFCA;
+    }
+
+    #direccionamientos{
+        font-size: 15px;
+        color: #E8DFCA;
+        text-decoration: none;
+        background-color: #4f6f52;
+        border-radius: 0px 15% 0px 15%;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.3), 
+        0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    #contenidoImagem{
+        background-color: none;
+    }
+    .proyectosGrid1:hover{
+        transform: scaleY(1.2);
+    }
+
+    h3{
+        background-color: #4f6f52;
+        border-radius: 30px;
+    }
+
+    .imagenGrid1{
+        transition: 0.3s ease;
+        justify-content: center;
+        height: 350px;
+    }
+
+    .imagenGrid1:hover{
+        transform: scale(1.2);
+    }
+
+    .imagenGrid1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    .textosGrid1 {
+        position: relative;
+        opacity: 0;
+        transition: 0.6s ease ;
+        height: 350px;
+    }
+
+    .textosGrid1 p,h3{
+        margin: 12px;
+        line-height: 1.5;
+        color: #E8DFCA;
+    }
+
+    .proyectosGrid1:hover .textosGrid1{
+        opacity: 1;
+    }
+
+    .proyectosGrid2 {
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        background-color: #1A4D2E;
+        padding: 0px;
+        transition: 0.5s ease;
+        border-radius: 25px;
+    }
+
+    .proyectosGrid2 > div {
+        text-align: center;
+        height: 350px;
+        padding: 4%;
+    }
+
+    .proyectosGrid2:hover{
+        transform: scaleY(1.2);
+    }
+
+    .imagenGrid2{
+        transition: 0.3s ease;
+        justify-content: center;
+    }
+
+    .imagenGrid2:hover{
+        transform: scale(1.2);
+    }
+
+    .imagenGrid2 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    .textosGrid2 {
+        position: relative;
+        opacity: 0;
+        transition: 0.6s ease ;
+        height: 350px;
+    }
+
+    .textosGrid2 p,h3{
+        margin: 12px;
+        line-height: 1.5;
+        opacity: 1;
+        color: #E8DFCA;
+
+    }
+
+    .proyectosGrid2:hover .textosGrid2{
+        opacity: 1;
+    }
+
+    .proyectosGrid3{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        background-color: #1A4D2E;
+        padding: 0px;
+        transition: 0.5s ease;
+        border-radius: 25px;
+    }
+
+    .proyectosGrid3 > div {
+        text-align: center;
+        height: 350px;
+        padding: 4%;
+    }
+
+    .proyectosGrid3:hover{
+        transform: scaleY(1.2);
+    }
+
+    .imagenGrid3{
+        transition: 0.3s ease;
+        justify-content: center;
+    }
+
+    .imagenGrid3:hover{
+        transform: scale(1.2);
+    }
+
+    .imagenGrid3 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    .textosGrid3 {
+        position: relative;
+        opacity: 0;
+        transition: 0.6s ease ;
+        height: 350px;
+    }  
+
+    .textosGrid3 p,h3{
+        margin: 12px;
+        line-height: 1.5;
+        opacity: 1;
+        color: #E8DFCA;
+    }
+
+    .proyectosGrid3:hover .textosGrid3{
+        opacity: 1;
+    }
+
   }
 
   
