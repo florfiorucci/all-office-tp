@@ -646,7 +646,7 @@ footer{
 
   @media only screen and (min-width: 768px){
     .navMenu li {
-        padding: 0 10px;
+        padding: 0 8px;
     }
 
     #menu {
