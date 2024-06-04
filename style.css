@@ -681,9 +681,12 @@ footer{
         display: flex;
     }
 
-    .cajaMenu p {
+    .separador {
         font-weight: bold;
         color:#000000;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
     }
     
     .cajaMenu a:hover{
