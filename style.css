@@ -73,8 +73,8 @@ header {
     cursor: pointer;
 }
 
-#listaMenuDesplegable:hover{
-    color: #000000;
+.listaMenuDesplegable:hover{
+    color:#000000;
 }
 
 .cajaMenu{
