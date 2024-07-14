@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo FINAL</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    
+    <div>
+        <h1>VENTAS</h1>
+        <div class="img"><img src="Imágenes/logoempresa.png" alt="All Office" width="100px"></div>
+        <h3>All Office</h3>
+        <table>
+            <tr>
+                <td class="contenedor-centrado "><a href="listado.html">Listado de productos</a></td>
+            </tr>
+            
+            <tr>
+                <td class="contenedor-centrado "><a href="carrito1.html">Carrito de compras</a></td>
+            </tr>
+        </table>
+    </div>
+    <a id="private" class="botton-flotante">Gestion Privada</a>
+    <script>
+        document.getElementById("private").addEventListener("click", function() {
+        var password = prompt("Ingresa la contraseña:");
+        if (password === "1234") {
+        alert("Contraseña correcta. Acceso permitido.");
+        window.location.href = "privado.html"
+         } else {
+        alert("Contraseña incorrecta. Acceso denegado.");
+        }
+        });
+    </script>
+</body>
+
+</html>
